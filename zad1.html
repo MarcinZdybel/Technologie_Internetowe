@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous">
+        <script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+			integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+			integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+			crossorigin="anonymous"></script>
+		<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<link rel="stylesheet" href="/css/font-awesome.min.css" />
+        <title>O mnie</title>
+</head>
+<style>
+ul, ul li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+width:50px;
+height:50px;
+display: inline;
+white-space: nowrap;
+margin-right: 5px;
+}
+
+
+ul {
+	text-align: center;
+	border-bottom: 1px solid #888;
+	padding-bottom: 5px;
+}
+
+ul li {
+	display: inline;
+	white-space: nowrap;
+	margin-right: 5px;
+}
+
+ul a:link, ul a:visited {
+	text-decoration: none;
+	background-color: #ccc;
+	color: #000;
+	border: 1px solid #888;
+	padding: 5px;
+}
+
+ul a:hover {
+	background-color: #fff;
+	border-bottom-color: #fff;
+}
+</style>
+</head>
+<body>
+<section>
+<nav>
+<ul>
+<img class="logo" src="logo.png">
+<li><a href="sh.html">Slider/Hero</a></li>
+<li><a href="index.html">O mnie</a></li>
+<li><a href="zad1.html">Zadanie JavaScript 1</a></li>
+<li><a href="zad2.html">Zadanie JavaScript 2</a></li>
+<li><a href="zad3.html">Zadanie JavaScript 3</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+</nav>
+
+
+
+
+
+
+
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                  Zadanie 1
+                </div>
+                <div class="card-body" id="z1">
+                  
+
+
+                </div>
+              </div>
+        </div>
+        <footer style="position: absolute; bottom: 0px;">
+            <p id="date"></p>
+        </footer>
+
+        <script src="JS/Zad1.js"></script>
+
+
+</section>
+
+         <footer style="position: absolute; bottom: 0px;">
+            <p id="date"></p>
+        </footer>
+		<script>
+            var sign = '&copy;';
+            document.getElementById("date").innerHTML=sign+' Marcin Zdybel - Informatyka, NST, VI semestr '+((new Date().toLocaleDateString('pl-pl', {day:"numeric", month:"numeric", year:"numeric"})));
+        </script>
+
+</body>
+
+</html>
